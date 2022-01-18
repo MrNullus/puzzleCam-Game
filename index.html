@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Puzzle Cam Game</title>
+
+		<!-- link file css -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- file script js -->
+		<script src="script.js"></script>
+	</head>
+	<body onload="main()">
+		<canvas id="myCanvas">
+					
+		</canvas>
+		<div id="menuItems">
+			<div id="menu">
+				<div id="controls">
+					Difficulty <select onChange="setDifficulty()" id="difficulty">
+						<option value="easy">Easy</option>
+						<option value="medium">Medium</option>
+						<option value="hard">Hard</option>
+						<option value="insane">Insane</option>
+					</select>
+
+					<button onclick="restart()">Start</button>
+				</div>
+			</div>
+			
+			<div id="time"></div>
+		</div>
+	</body>
+</html>
